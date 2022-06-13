@@ -1,0 +1,41 @@
+﻿<Window x:Class="AppointmentWPFDotNet6.MainWindowNoFrame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppointmentWPFDotNet6"
+        mc:Ignorable="d"
+        Title="Agenda LaManu" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="LOGO"  Grid.Row="0" Grid.Column="0" Text="LAMANU" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal"  Height="50" Margin="5" >
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Margin" Value="30,0,0,0"/>
+                    <Setter Property="Width" Value="70"/>
+                    <Setter Property="Height" Value="30"/>
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                </Style>
+            </StackPanel.Resources>
+            <Button x:Name="Home" Content="Home" Background="#FFCEF3D5" />
+            <Button x:Name="Customers" Content="Customers" Background="#FF79E7F5" />
+            <Button x:Name="Brokers" Content="Brokers" Background="#FFAAF3B8"/>
+            <Button x:Name="Appointments" Content="Appointments" Width="100" Background="#FFD77AED"/>
+            <Button x:Name="Login" Content="Login" Background="#FFE66D3F" />
+            <Button x:Name="Logout" Content="Logout" Background="#FFF1C3B2"/>
+            
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>
